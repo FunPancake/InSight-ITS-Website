@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d3xh5eo0555x7"]
+
+[ext_resource type="Texture2D" uid="uid://bpcudtk40dgv4" path="res://sprite/sceneAssets/Building Tiles 32x32.png" id="1_w1rv0"]
+
+[node name="Transition" type="Area2D" unique_id=1622782863]
+collision_layer = 0
+collision_mask = 512
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2023609498]
+position = Vector2(1, -26)
+texture = ExtResource("1_w1rv0")
+region_enabled = true
+region_rect = Rect2(576, 77, 63, 51)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

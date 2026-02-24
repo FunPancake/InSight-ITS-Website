@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bobbb51tnllvw"]
+
+[ext_resource type="Script" uid="uid://dr65k1pj0ko1v" path="res://scenes/ui/dialogue/dialgoue_ui.gd" id="1_tv44d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tv44d"]
+bg_color = Color(0.15122473, 0.03975366, 0.12341615, 0.65882355)
+
+[node name="DialgoueUi" type="CanvasLayer" unique_id=785526220]
+script = ExtResource("1_tv44d")
+
+[node name="Panel" type="Panel" parent="." unique_id=545726766]
+custom_minimum_size = Vector2(800, 150)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -204.0
+offset_right = 200.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_tv44d")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=1366170442]
+custom_minimum_size = Vector2(800, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=2139215079]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer" unique_id=873673520]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "NPC"
+
+[node name="DialogueLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer" unique_id=1298600933]
+custom_minimum_size = Vector2(370, 90)
+layout_mode = 2
+text = "Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow. Sphinx of Black Quartz, Judge My Vow."
+autowrap_mode = 2
+
+[node name="ContinueLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer" unique_id=495057421]
+layout_mode = 2
+text = "Continue"

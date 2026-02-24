@@ -1,0 +1,96 @@
+{
+  "questions": [
+	{
+	  "type": "multiple_choice",
+	  "question": "What does HTML stand for?",
+	  "options": [
+		"Hyper Trainer Marking Language",
+		"Hyper Text Markup Language",
+		"High Text Machine Language",
+        "Hyper Text Markdown Language"
+	  ],
+	  "answer": 1
+	},
+	{
+	  "type": "multiple_choice",
+	  "question": "Which data type stores true or false values?",
+	  "options": [
+		"int",
+		"string",
+		"boolean",
+        "float"
+	  ],
+	  "answer": 2
+	},
+	{
+	  "type": "multiple_choice",
+	  "question": "Which symbol is used for single-line comments in C#?",
+	  "options": [
+		"//",
+		"/* */",
+		"#",
+        "<!-- -->"
+	  ],
+	  "answer": 0
+	},
+	{
+	  "type": "true_false",
+	  "question": "JavaScript runs only on the server.",
+	  "answer": false
+	},
+	{
+	  "type": "true_false",
+	  "question": "A loop is used to repeat a block of code.",
+	  "answer": true
+	},
+	{
+	  "type": "multiple_choice",
+	  "question": "Which keyword is used to create a function in JavaScript?",
+	  "options": [
+		"def",
+		"function",
+		"func",
+        "method"
+	  ],
+	  "answer": 1
+	},
+	{
+	  "type": "check_all",
+	  "question": "Which of the following are object-oriented programming languages?",
+	  "options": [
+		"Java",
+		"C++",
+		"Python",
+        "HTML"
+	  ],
+	  "answers": [0, 1, 2]
+	},
+	{
+	  "type": "check_all",
+	  "question": "Which of the following are valid programming concepts?",
+	  "options": [
+		"Encapsulation",
+		"Inheritance",
+		"Polymorphism",
+        "Decoration"
+	  ],
+	  "answers": [0, 1, 2]
+	},
+	{
+	  "type": "multiple_choice",
+	  "question": "What is the purpose of a variable?",
+	  "options": [
+		"To repeat code",
+		"To store data",
+		"To compile code",
+        "To style a webpage"
+	  ],
+	  "answer": 1
+	},
+	{
+	  "type": "true_false",
+	  "question": "CSS is used to style web pages.",
+	  "answer": true
+	}
+  ]
+}

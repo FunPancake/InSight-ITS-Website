@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cotjqqf7k4jfb"]
+
+[ext_resource type="Script" uid="uid://w3r4k7pqs1ug" path="res://editor/tasks/quiz_task.gd" id="1_aeoy4"]
+[ext_resource type="FontFile" uid="uid://utqfd757lfa" path="res://sprite/font/PressStart2P-Regular.ttf" id="2_whvmh"]
+[ext_resource type="PackedScene" uid="uid://dtl0trh7p80xd" path="res://scenes/Task/pauseMenu.tscn" id="3_n0jpq"]
+
+[sub_resource type="Theme" id="Theme_n0jpq"]
+default_font = ExtResource("2_whvmh")
+
+[node name="QuizTask" type="Control" unique_id=706005874]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aeoy4")
+
+[node name="QuestionPanel" type="Panel" parent="." unique_id=600190436]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -250.0
+offset_right = 400.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuestionContainer" type="VBoxContainer" parent="QuestionPanel" unique_id=1067774695]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32823125
+anchor_top = 0.428
+anchor_right = 0.666057
+anchor_bottom = 0.572
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+metadata/_edit_use_anchors_ = true
+
+[node name="QuestionLabel" type="Label" parent="QuestionPanel/QuestionContainer" unique_id=1628218175]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_whvmh")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="OptionsContainer" type="VBoxContainer" parent="QuestionPanel/QuestionContainer" unique_id=630811571]
+layout_mode = 2
+localize_numeral_system = false
+theme = SubResource("Theme_n0jpq")
+
+[node name="Score" type="Label" parent="QuestionPanel/QuestionContainer" unique_id=1802468813]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_whvmh")
+horizontal_alignment = 1
+
+[node name="PauseMenu" parent="." unique_id=908656370 instance=ExtResource("3_n0jpq")]
